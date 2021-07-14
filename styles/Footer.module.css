@@ -1,0 +1,31 @@
+.footer {
+  height: 66px;
+  padding: 18px 16px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background-color: var(--dark-purple-footer);
+}
+
+.footer_icon {
+  margin-inline: 12px;
+}
+
+.tooltip {
+  background-color: #fff !important;
+  color: var(--dark-purple-footer) !important;
+  font-size: 0.875em !important;
+  padding: 8px !important;
+}
+
+@media screen and (min-width: 768px) {
+  .footer {
+    justify-content: center;
+    position: relative;
+  }
+
+  .footer > a {
+    position: absolute;
+    right: 16%;
+  }
+}

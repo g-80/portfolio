@@ -1,0 +1,135 @@
+.content {
+  margin-top: 100px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.content > div {
+  margin-block: 64px;
+  padding-inline: 17px;
+  max-width: 920px;
+}
+
+.project_item {
+  background-color: var(--project);
+  border-radius: 12px;
+  border: 1px var(--light-border) solid;
+  box-shadow: 0px 7px 10px -5px rgba(0, 0, 0, 0.15);
+  margin-bottom: 24px;
+}
+
+.image {
+  border-radius: 12px 12px 0 0;
+}
+
+.details {
+  display: grid;
+  grid-template-columns: auto 1fr;
+  grid-template-rows: auto auto auto;
+  align-items: center;
+  padding: 12px;
+  font-size: 0.9em;
+}
+
+.details > h3 {
+  font-size: 1.125em;
+  font-weight: 700;
+  margin: 0;
+}
+
+.details > p {
+  grid-column: 1 / 4;
+  margin-top: 6px;
+}
+
+.tags {
+  display: flex;
+  align-items: center;
+  grid-row: 2 / 3;
+  grid-column: 1 / 3;
+  font-size: 0.9em;
+  font-weight: 600;
+  flex-wrap: wrap;
+}
+
+.tags > div {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 6px 9px;
+  border-radius: 7px;
+  margin-right: 6px;
+  margin-block: 4px;
+}
+
+.tags span {
+  margin-left: 4px;
+}
+
+.tags_react {
+  color: hsl(193, 95%, 68%);
+  background-color: hsl(193, 30%, 30%);
+}
+
+.tags_graphql {
+  color: hsl(320, 77%, 55%);
+  background-color: hsl(320, 30%, 30%);
+}
+.tags_mongodb {
+  color: hsl(121, 39%, 55%);
+  background-color: hsl(121, 30%, 30%);
+}
+.tags_nodejs {
+  color: hsl(115, 37%, 65%);
+  background-color: hsl(115, 30%, 30%);
+}
+.tags_firebase {
+  color: hsl(34, 100%, 58%);
+  background-color: hsl(34, 30%, 30%);
+}
+.tags_jest {
+  color: hsl(345, 52%, 63%);
+  background-color: hsl(345, 30%, 30%);
+}
+
+.links {
+  justify-self: end;
+}
+
+.links > a {
+  color: var(--accent);
+  margin-left: 12px;
+}
+
+@media screen and (min-width: 768px) {
+  .project_item {
+    margin-bottom: 46px;
+  }
+
+  .details {
+    font-size: 1em;
+    padding: 16px;
+  }
+
+  .details > h3 {
+    font-size: 1.875em;
+  }
+
+  .details > p {
+    margin-top: 21px;
+    font-size: 1.125em;
+  }
+
+  .tags {
+    font-size: 0.9em;
+    grid-row: 1 / 2;
+    grid-column: 2 / 3;
+    margin: 0 0 0 24px;
+  }
+
+  .icons {
+    width: 32px;
+    height: 32px;
+  }
+}
